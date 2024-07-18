@@ -34,3 +34,28 @@ Routes inside routes
 Called layout.tsx and layout.js. Accepts the children prop 
 
 13. Routing metadata - proper SEO. Metadata API - define metadata for each page. Display correct information when. Layout and Page have metadata
+
+14. Layouts
+
+15. Nested Layouts
+
+16. Route Group Layout
+
+17. Routing metadata
+
+18. Title metadata
+
+19. Link Component nagivation - 
+
+20. Active Links -usePathname from next/navigation function. Only works with client component -- "use client"
+
+21. Navigating Programmatically - useRouter hook
+
+22. Template files. - layouts mount the changed content. Templates similar to layouts in that they wrap each child layout. template.tsx different from layouts because everything is rerendered.
+
+23. Loading UI - Special Files --> page.tsx, layout.tsx, template.tsx, not-found.tsx,. 
+Loading.tsx. file used while page is loading -> Loading states are displayed to users while a specific route segment's content is loading. Give assurance application is responsive and actively loading content. React suspense boundary. Display loading state. 
+
+24. Error Handling - Special file -> error.tsx. Throw an error. Npm run build and npm run start.
+Error.tsx is used for handling errors. Server side exceptions used for the components. Placed where page.tsx is. Wraps the route segment an its nested children in a react error boundary. Isolate errors and keep the rest of the app functional.
+
