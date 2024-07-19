@@ -57,5 +57,18 @@ Called layout.tsx and layout.js. Accepts the children prop
 Loading.tsx. file used while page is loading -> Loading states are displayed to users while a specific route segment's content is loading. Give assurance application is responsive and actively loading content. React suspense boundary. Display loading state. 
 
 24. Error Handling - Special file -> error.tsx. Throw an error. Npm run build and npm run start.
-Error.tsx is used for handling errors. Server side exceptions used for the components. Placed where page.tsx is. Wraps the route segment an its nested children in a react error boundary. Isolate errors and keep the rest of the app functional.
+Error.tsx is used for handling errors. Server side exceptions used for the components. Placed where page.tsx is. Wraps the route segment an its nested children in a react error boundary. Isolate errors and keep the rest of the app functional. 
+Component- hierarcy layout.js, template.js, error.js, loading.js, not-found.js, page.js.
 
+25. Recovering from Errors - invoke reset and retry. Re-render the error boundaries. Fallback 
+
+26. Handling Errors in Nested Routes - Placing error.tsx at di fferent  levels of nested folders of a route achieves granular level of error handling. 
+27. Handling errors in layout.tsx - error.tsx does not handle the errors in the layout.tsx
+28. Parallel Routes - Advanced routing mechanism simultaneous rendering of multiple pages within the same layout. Use of slots to help structure our content in a modular fashion. We use the @folder to define slots and each folder has its own page.tsx. They become props along children in layout.tsx. Independed route handling. Each mini application becomes a slot.
+29. Unmatched routes - sub navigation. Default.tsx file when reloaded for unmatched routes. Fallback to render content. Cannor retrieve slot active state.
+30. Conditional routes - Depending on a condition we decided which state to render
+31. Intercepting Routes - Show a route while keeping components. Folder name (.)name --> (..)name
+32. Parallel Intercepting Routes -->
+33. Route Handlers --> Create RESTful endpoints giving you full control over the responses. Route handlers run server-side allowing information to remain secure. Response object. Use of async functions. route.ts handles the url by default. Have to use the api folder. 
+34. Handling GET request(route handlers) - responses.json. Use the thunder client. GET in route.ts
+35. Handling a POST request(route handlers) - POST function in route.ts
