@@ -1,44 +1,200 @@
 # Next.js Modules
 
-## Project Structure
+Next.js course modules and topics studied.
 
-1. **package.json**: Contains scripts, dependencies, and devDependencies for the project.
-2. **Config files**: Configuration files for eslint, next, postcss, tailwind, and typescript.
-3. **node_modules**: Directory for installed npm packages.
-4. **public folder**: Holds static assets like images and fonts.
-5. **src**: Main source folder containing application code.
-   - **app**: Main application logic.
-   - **layout.tsx**: Common layout components.
-   - **page.tsx**: Home page component.
+## Project Basics
+### 1. Introduction
+- What is Next.JS
+  
+### 2. Project Structure
+- Overview of key files and folders in a Next.js project
 
-## React Server Components
+### 3. React Server Components
+- Introduction to Server and React Components
+  
+### 4-5. Routing
+- Basic routing concepts in Next.js
 
-6. **Server Components and React Components**: Server components are static and cannot use hooks or handle user interactions.
-7. **Client components**: Cannot read files and must handle user interactions and hooks.
+### 6. Nested Routes
+- Creating routes within routes
 
-## Routing
+### 7. Dynamic Routes
+- Implementing dynamic routing
 
-8. **Routing**: All routes are defined inside the app folder with each folder representing a route.
-9. **Nested Routes**: Routes within routes for deeper navigation structures.
-10. **Dynamic Routes**: Create dynamic routes with parameters.
-11. **Catch all segments**: Handle wildcard routes for dynamic path segments.
-12. **Not Found**: Use not-found.tsx in the app router for 404 pages.
+### 8. Catch-all Segments
+- Handling multiple path segments
+
+### 9. Not Found
+- Creating custom 404 pages
+
+### 10. Private Folders
+- Using underscore prefix for private folders
+
+### 11. Route Groups
+- Organizing routes without affecting URL structure
+
+## Layouts and Metadata
+### 12. Layouts
+- Creating shared layouts for multiple pages
+
+### 13. Routing Metadata
+- Implementing proper SEO with Metadata API
+
+### 14-15. Layouts and Nested Layouts
+- Further exploration of layout concepts and creating hierarchical layout structures
+
+### 16. Route Group Layout
+- Applying layouts to route groups
+
+### 17-18. Routing and Title Metadata
+- Advanced usage of routing metadata and specifying page titles for SEO
+
+## Navigation and Templates
+### 19. Link Component Navigation
+- Using the Link component for client-side navigation
+
+### 20. Active Links
+- Highlighting active navigation links
+
+### 21. Navigating Programmatically
+- Using the useRouter hook for navigation
+
+### 22. Template Files
+- Implementing template.tsx for rerendering
+
+## Loading and Error Handling
+### 23. Loading UI
+- Creating loading states with loading.tsx
+
+### 24. Error Handling
+- Implementing error.tsx for error boundaries
+
+### 25. Recovering from Errors
+- Using reset and retry for error recovery
+
+### 26. Handling Errors in Nested Routes
+- Granular error handling in nested structures
+
+### 27. Handling Errors in layout.tsx
+- Addressing layout-specific errors
 
 ## Advanced Routing
+### 28. Parallel Routes
+- Rendering multiple pages simultaneously
 
-13. **Private folders**: Prefix folders with an underscore to make them private, e.g., _lib.
-14. **Route Groups**: Group routes without affecting URL structure by placing folders in parentheses.
-15. **Layouts**: Shared layout components among multiple pages, defined in layout.tsx or layout.js.
-16. **Nested Layouts**: Layouts within layouts for complex page structures.
-17. **Route Group Layout**: Group-specific layout components.
-18. **Routing metadata**: Define metadata for proper SEO using the Metadata API.
-19. **Title metadata**: Set dynamic titles for pages.
-20. **Link Component navigation**: Use the Link component for client-side navigation.
-21. **Active Links**: Highlight active links using usePathname from next/navigation.
-22. **Navigating Programmatically**: Use the useRouter hook for programmatic navigation.
+### 29. Unmatched Routes
+- Handling unmatched routes with default.tsx
 
-## Special Files and Handling
+### 30. Conditional Routes
+- Implementing condition-based routing
 
-23. **Template files**: Templates wrap each child layout and re-render everything on change, defined in template.tsx.
-24. **Loading UI**: Show loading states with loading.tsx while content is being fetched.
-25. **Error Handling**: Use error.tsx to handle server-side exceptions and isolate errors.
+### 31. Intercepting Routes
+- Intercepting and modifying route behavior
+
+### 32. Parallel Intercepting Routes
+- Combining parallel and intercepting routes
+
+## API Routes and Handlers
+### 33. Route Handlers
+- Creating RESTful endpoints
+
+### 34-38. HTTP Methods in Route Handlers
+- Implementing GET, POST, PATCH, and DELETE in route handlers
+
+### 39. URL Query Parameters
+- Working with query parameters in routes
+
+### 40. Redirects in Route Handlers
+- Implementing redirects in API routes
+
+### 41. Headers in Route Handlers
+- Handling HTTP headers in API routes
+
+### 42. Cookies in Route Handlers
+- Managing cookies in API routes
+
+### 43. Caching in Route Handlers
+- Implementing caching strategies
+
+## Middleware and Rendering
+### 44. Middleware
+- Creating and using middleware in Next.js
+
+### 45. Rendering
+- Overview of rendering processes in Next.js
+
+### 46. Client-side Rendering
+- Understanding client-side rendering concepts
+
+### 47. Server-side Rendering
+- Exploring server-side rendering in Next.js
+
+### 48. Suspense for SSR
+- Using Suspense for improved SSR
+
+## React Server Components (RSC)
+### 49. React Server Components (RSC)
+- Deep dive into React Server Components
+
+### 50. Server and Client Components
+- Differentiating between server and client components
+
+### 51. RSC Rendering Lifecycle
+- Understanding the RSC rendering process
+
+## Rendering Strategies
+### 52. Static Rendering
+- Implementing static rendering in Next.js
+
+### 53. Dynamic Rendering
+- Implementing dynamic rendering in Next.js
+
+### 54. Streaming
+- Using streaming for progressive UI rendering
+
+## Component Patterns and Best Practices
+### 55. Server and Client Composition Patterns
+- Best practices for combining server and client components
+
+### 56. Server-only Code
+- Implementing server-only functionality
+
+### 57. Third-Party Packages
+- Working with external packages in Next.js
+
+### 58. Context Providers
+- Using context providers in Next.js
+
+### 59. Client-only Code
+- Implementing client-only functionality
+
+### 60. Client Component Placement
+- Optimizing client component positioning
+
+### 61. Interleaving Server and Client Components
+- Techniques for mixing server and client components
+
+## Data Fetching and Caching
+### 62-63. Data Fetching
+- Overview of data fetching in Next.js and implementing in server components
+
+### 64. Loading and Error States
+- Creating loading and error UI components
+
+### 65. JSON Server Setup
+- Setting up a mock API with JSON Server
+
+### 66-67. Caching Data
+- Implementing data caching strategies and understanding the Next.js data cache
+
+### 68. Opting Out of Caching
+- Disabling caching for specific scenarios
+
+### 69. Request Memoization
+- Optimizing data fetching with memoization
+
+### 70. Time-based Data Revalidation
+- Implementing time-based cache invalidation
+
+### 71. Client-side Data Fetching
+- Fetching data on the client-side in Next.js
