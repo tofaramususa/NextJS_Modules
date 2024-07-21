@@ -96,4 +96,19 @@ Route Section Summary - Route definition; Pages and Layouts; Dynamic routes; Rou
 54. Streaming -  Progressive UI rendering. Seeing parts of the page immediately. Streaming is there in App router by default. Using the suspense component. 
 55. Server and Client Composition Patterns - Server components - fetchingdata, accessing backend resources, protecting sensitive info. Client components - interaction, event listeners, managing state, browser APIs, custom hooks, react class components. 
 56. Server-only code - only on the server. server-only package. npm i server-only.
-57. Third Party Packages - 
+57. Third Party Packages - some don't work with server components.
+58. Context Providers - share global application state and logic
+59. Client-only code - DOM etc. not on server. client-only code. 
+60. Client component placement - position in component tree is lower. Every sub compenent in compenent using "use client" becomes client side. 
+61. Interleaving Server and Client Components - nested components converted to client components. To avoid this add the child components as props. {children} and pass them. 
+62. Data fetching - Ideal for server components since they are closer to the server and less client processing. TanStack Query offers robust APIs for data fetching. 
+63. Fetching Data with Server Components - basis for data fetching -> async and await. 
+64. Loading and Error States - Use loading.tsx and error.tsx --> make components for both.
+65. JSON server setup - npm install json-server. Create server.js
+66. Caching Data - Data caching on server for fetch operation.
+67. Data Cache - improves app performance, reduces costs by eliminating need to re-fetch data for every request. Rendering - Data cache - Data source. Inside .next has fetch-cache
+68. Opting Out of Caching - cache:"no-store"
+69. Request Memoization -  re-use of data to prevent redudant network calls and enhances performances. Fetch results stored in memory. Only applies to the GET method in fetch requests. 
+70. Time based Data Revalidation - purging cache and re-fetching the latest data. Revalidates after a certain amount of time has passed. Set  the revalidate route segment configuration 
+71. Client side data fectching - useState and useEffect. Use tanstack query. Use a route handler. 
+ 
