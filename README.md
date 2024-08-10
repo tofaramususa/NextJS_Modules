@@ -2,7 +2,7 @@
 
 Next.js course modules and topics studied.
 
-## Project Basics
+## Topics
 ### 1. Introduction
 - What is Next.JS
   
